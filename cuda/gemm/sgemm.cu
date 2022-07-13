@@ -3,6 +3,9 @@
 #include <cstdio>
 #include <cmath>
 #include <vector>
+// CUDA runtime
+#include <cuda_runtime.h>
+#include <cublas_v2.h>
 
 void random_init(float *data, size_t size) {
     for (size_t i = 0; i < size; ++i) {
